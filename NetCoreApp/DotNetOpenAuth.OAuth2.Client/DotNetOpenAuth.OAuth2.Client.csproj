@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>DotNetOpenAuth.OAuth2.Client</AssemblyName>
+    <RootNamespace>DotNetOpenAuth.OAuth2</RootNamespace>
+    <PackageId>YTML.DotNetOpenAuth.OAuth2.Client</PackageId>
+    <Version>1.1.0</Version>
+    <Authors>YTML</Authors>
+    <Company>YTML</Company>
+    <Product>YTML.DotNetOpenAuth.OAuth2.Client</Product>
+    <Description>Combines the original DotNetOpenAuth.OAuth2.Client and DotNetOpenAuth.OAuth2.ClientAuthorization projects. OAuth 2.0 client support only.</Description>
+    <PackageLicenseUrl>https://github.com/mlawry/dotnetopenauthcore/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/mlawry/dotnetopenauthcore</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Serialization.Xml" Version="4.3.0" />
+    <PackageReference Include="Validation" Version="2.4.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OAuth2\Messages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetOpenAuth.Core\DotNetOpenAuth.Core.csproj" />
+  </ItemGroup>
+
+</Project>
